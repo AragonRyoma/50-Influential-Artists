@@ -1,0 +1,83 @@
+div.wrap {
+  text-align: center;
+  width: 100%;
+  margin: 0, auto;
+
+  section.title-container {
+    display: block;
+
+    hr {
+      width: 70%;
+    }
+
+    p {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: @font-type;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p#artt {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: @font-type;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    button {
+      .button();
+    }
+
+    img {
+      padding-top: 20px;
+      width: 58%;
+      height: 55%;
+      padding-bottom: 1rem;
+      overflow: hidden;
+      &:hover {
+        opacity: 80%;
+      }
+    }
+  }
+
+  section.artists-container {
+    .flexie(flex,space-evenly);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    div.artist {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-family: @font-type;
+        text-decoration: none;
+        color: black;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      img {
+        border-radius: 0.4rem;
+        width: 16rem;
+        height: 12rem;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      div.bio {
+        .artbio();
+      }
+    }
+  }
+}
